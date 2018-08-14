@@ -2,20 +2,29 @@
 <html>
 
 <head lang="en">
+    <!-- Meta -->
     <meta charset="UTF-8">
     <meta name="description" content="Andela Technical Challenge, Quiz App">
-    <meta name="keywords" content="HTML,CSS,JavaScript,Quiz App,Andela,Technical Challenge, circle 36">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Different Words Same Letter,Andela,Technical Challenge, circle 36">
     <meta name="author" content="Adepoju Oluwasegun">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
     <title>Different Words, Same Letter</title>
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" sizes="16x16">
+    <!-- css -->
     <link rel="stylesheet" type="text/css" href="css/Styles.css" />
 </head>
 
+<!-- Main Body -->
+
 <body>
+    <!-- Heading -->
     <hr/>
-    <h1>Different Words, Same Letter</h1>
+    <h1>Detecting Different Words with the Same Letters</h1>
     <hr/>
     <div>
+        <!-- Hint Section -->
         <div class="info">
             <P class="hint">Hint :</P>
             <P class="hint_text"> Enter a random Sentence into the text box and it will be checked for words having equal
@@ -24,16 +33,21 @@
                 <em> "different arrangement" </em>
             </p>
         </div>
-        <fieldset class="fieldset">
-            <fieldset>
-                <legend>Please Enter a Desired Sentence Here</legend>
-                <textarea autofocus rows="6" cols="60" id="input" class="input" placeholder="Enter a Sentence Here"></textarea>
+
+        <!-- Fieldset -->
+        <div class="app_body">
+            <fieldset class="fieldset">
+                <fieldset>
+                    <legend>Please Enter Your Desired Sentence Here</legend>
+                    <input type="text" id="input" class="input" placeholder="Enter a Sentence Here"></textarea>
+                </fieldset>
+                <button id="submit"> Check Sentence</button>
+                <div id="output">
+                </div>
             </fieldset>
-            <button id="submit"> Check Sentence</button>
-            <div id="output">
-            </div>
-        </fieldset>
+        </div>
     </div>
+    <!-- Javascript -->
     <script type="text/Javascript" src="Js/Script.js"></script>
 </body>
 

@@ -1,70 +1,70 @@
+/* Styling for the Heading*/
 h1 {
-    color: #4EB1BA;
+    color: #4eb1ba;
     margin: 5px;
     padding: 5px;
     border: light #343434 groove;
-    text-align:center;
+    text-align: center;
     font-size: 50px;
-}
-.line{
-    background-color: #4EB1BA;
-}
-body {
+  }
+  
+  /* Styling for the Hint Section */
+  .line {
+    background-color: #4eb1ba;
+  }
+  body {
     background-color: #222930;
-        text-align: center;
-    }
-.info{
+    text-align: center;
+  }
+  .info {
     text-align: center;
     width: 429px;
     padding-top: 60px;
     margin: auto;
-    color:#E9E9E9;
+    color: #e9e9e9;
     margin-top: 10px;
     font-size: 20px;
-    }
-
-.hint{
+  }
+  
+  .hint {
     text-align: center;
-    border-left: 1px solid #4EB1BA;
+    border-left: 1px solid #4eb1ba;
     width: 60px;
     margin: auto;
-    color:#E9E9E9;
+    color: #e9e9e9;
     margin-left: -53px;
-    
-    
-}
-
-.hint_text{
+  }
+  
+  .hint_text {
     text-align: left;
-    color: #E9E9E9;
+    color: #e9e9e9;
     margin-top: -21px;
     margin-left: 10px;
     float: right;
-}
-
-.fieldset {
-    color: darkblue;
-    border: 1px solid #4EB1BA;
+  }
+  
+  /*Styling for the Fieldset*/
+  .fieldset {
+    border: 1px solid #4eb1ba;
     text-align: center;
     width: 30px;
-    margin: 30px;
     orientation: center;
     margin: auto;
-    color:#E9E9E9;
+    color: #e9e9e9;
     margin-top: 100px;
     font-size: 18px;
+    border-radius: 6px;
+  }
+  
+  input{
+	width: 500px;
+	height: 120px;
+	text-align: center;
+	margin: auto;
+	border-radius: 6px;
 }
 
-button{
-	font-size: 20px;
-	margin: 10px;
-}
-
-#output{
-    display: none;
-}
-
-legend{
+  legend {
     -webkit-animation-name: blinker;
     -webkit-animation-duration: 2s;
     -webkit-animation-timing-function: linear;
@@ -78,21 +78,73 @@ legend{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
-@-moz-keyframes blinker {
-      0% { opacity: 1.0; }
-      50% { opacity: 0.3; }
-      100% { opacity: 1.0; }
+  @-moz-keyframes blinker {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-@-webkit-keyframes blinker {
-      0% { opacity: 1.0; }
-      50% { opacity: 0.3; }
-      100% { opacity: 1.0; }
+  @-webkit-keyframes blinker {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-@keyframes blinker {
-      0% { opacity: 1.0; }
-      50% { opacity: 0.3; }
-      100% { opacity: 1.0; }
+  @keyframes blinker {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-em{
-    font: bold
-}
+  
+  em {
+    font: bold;
+  }
+  
+  /* Styling for the Button*/
+  button {
+    font-size: 20px;
+    margin: 10px;
+  }
+  
+  /* Styling for the Div Displaying the Outcome*/
+  #output {
+    display: none;
+    font: bold;
+  }
+  
+  /*Styling for Screen Size Responsiveness*/
+  @media (max-width: 500px) {
+    .info {
+      width: 300px;
+    }
+    .app_body {
+      width: 300px;
+    }
+  }
+  @media (min-width: 900px) {
+    .info {
+      width: 400px;
+    }
+  }
+  @media (min-width: 501px) and (max-width: 899px) {
+    .info {
+      width: 400px;
+    }
+  }
+  
