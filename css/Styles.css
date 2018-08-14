@@ -1,7 +1,98 @@
-input{
-	width: 300px;
-	height: 30px;
-	text-align: center;
-	margin-left: 80px;
-    border-radius: 6px;
+h1 {
+    color: #4EB1BA;
+    margin: 5px;
+    padding: 5px;
+    border: light #343434 groove;
+    text-align:center;
+    font-size: 50px;
+}
+.line{
+    background-color: #4EB1BA;
+}
+body {
+    background-color: #222930;
+        text-align: center;
+    }
+.info{
+    text-align: center;
+    width: 429px;
+    padding-top: 60px;
+    margin: auto;
+    color:#E9E9E9;
+    margin-top: 10px;
+    font-size: 20px;
+    }
+
+.hint{
+    text-align: center;
+    border-left: 1px solid #4EB1BA;
+    width: 60px;
+    margin: auto;
+    color:#E9E9E9;
+    margin-left: -53px;
+    
+    
+}
+
+.hint_text{
+    text-align: left;
+    color: #E9E9E9;
+    margin-top: -21px;
+    margin-left: 10px;
+    float: right;
+}
+
+.fieldset {
+    color: darkblue;
+    border: 1px solid #4EB1BA;
+    text-align: center;
+    width: 30px;
+    margin: 30px;
+    orientation: center;
+    margin: auto;
+    color:#E9E9E9;
+    margin-top: 100px;
+    font-size: 18px;
+}
+
+button{
+	font-size: 20px;
+	margin: 10px;
+}
+
+#output{
+    display: none;
+}
+
+legend{
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 2s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    animation-name: blinker;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+@-moz-keyframes blinker {
+      0% { opacity: 1.0; }
+      50% { opacity: 0.3; }
+      100% { opacity: 1.0; }
+  }
+@-webkit-keyframes blinker {
+      0% { opacity: 1.0; }
+      50% { opacity: 0.3; }
+      100% { opacity: 1.0; }
+  }
+@keyframes blinker {
+      0% { opacity: 1.0; }
+      50% { opacity: 0.3; }
+      100% { opacity: 1.0; }
+  }
+em{
+    font: bold
 }

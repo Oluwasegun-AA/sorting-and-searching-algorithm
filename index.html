@@ -8,16 +8,32 @@
     <meta name="author" content="Adepoju Oluwasegun">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Different Words, Same Letter</title>
-    <link rel="stylesheet" type="text/css" href="css/Style.css" />
+    <link rel="stylesheet" type="text/css" href="css/Styles.css" />
 </head>
 
 <body>
+    <hr/>
+    <h1>Different Words, Same Letter</h1>
+    <hr/>
     <div>
-        <input type="text" id="input" placeholder="Enter a Sentence Here" />
-        <button type="button" id="submit"> Submit</button>
-         <input type="text" id="output" placeholder="Answer Appears Here" />
+        <div class="info">
+            <P class="hint">Hint :</P>
+            <P class="hint_text"> Enter a random Sentence into the text box and it will be checked for words having equal
+                <em> "length" </em>,
+                <em> "same letters" </em> , but
+                <em> "different arrangement" </em>
+            </p>
+        </div>
+        <fieldset class="fieldset">
+            <fieldset>
+                <legend>Please Enter a Desired Sentence Here</legend>
+                <textarea autofocus rows="6" cols="60" id="input" class="input" placeholder="Enter a Sentence Here"></textarea>
+            </fieldset>
+            <button id="submit"> Check Sentence</button>
+            <div id="output">
+            </div>
+        </fieldset>
     </div>
-
     <script type="text/Javascript" src="Js/Script.js"></script>
 </body>
 
