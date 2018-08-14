@@ -120,6 +120,7 @@ h1 {
   button {
     font-size: 20px;
     margin: 10px;
+    border-radius: 6px;
   }
   
   /* Styling for the Div Displaying the Outcome*/
