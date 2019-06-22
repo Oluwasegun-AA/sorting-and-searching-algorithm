@@ -1,3 +1,10 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+}
+
 /* Styling for the Heading*/
 h1 {
     color: #4eb1ba;
@@ -147,5 +154,19 @@ h1 {
     .info {
       width: 400px;
     }
+  }
+
+  h5 {
+    color: burlywood;
+  }
+
+  .container {
+    height: 94vh;
+  }
+
+  footer {
+    padding-top: 3px;
+    background-color: black;
+    height: 8vh;
   }
   
