@@ -2,64 +2,131 @@
 <html>
 
 <head lang="en">
-    <!-- Meta -->
-    <meta charset="UTF-8">
-    <meta name="description" content="Andela Technical Challenge, Quiz App">
-    <meta name="keywords" content="HTML,CSS,JavaScript,Different Words Same Letter,Andela,Technical Challenge, circle 36">
-    <meta name="author" content="Adepoju Oluwasegun">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title -->
-    <title>Different Words, Same Letter</title>
-    <!-- Favicon -->
-    <link rel="icon" href="img/favicon.ico" sizes="16x16">
-    <!-- css -->
-    <link rel="stylesheet" type="text/css" href="css/Styles.css" />
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta name="description" content="An app to detect isomorphic words | Adépòjù Olúwáségun">
+  <meta name="keywords" content="sorting, searching, algorithm, isomorphic, words">
+  <meta name="author" content="Adépòjù Olúwáségun">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title> detect isomorphic Words</title>
+  <!-- Favicon -->
+  <link rel="icon" href="img/fav.ico" sizes="16x16">
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="css/Styles.css" />
 </head>
 
 <!-- Main Body -->
 
 <body>
-    <!-- Heading -->
-    <div class="container">
-    <hr/>
-    <h1>Detecting Different Words with the Same Letters</h1>
-    <hr/>
-    <style>#forkongithub a{background:#000;color:#fff;text-decoration:none;font-family:arial,sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1rem;line-height:2rem;position:relative;transition:0.5s;}#forkongithub a:hover{background:#c11;color:#fff;}#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff;}#forkongithub a::after{bottom:1px;top:auto;}@media screen and (min-width:800px){#forkongithub{position:fixed;display:block;top:0;right:0;width:200px;overflow:hidden;height:200px;z-index:9999;}#forkongithub a{width:200px;position:absolute;top:60px;right:-60px;transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}</style><span id="forkongithub"><a href="https://github.com/shegsteham/sorting-and-searching-algorithm">Fork me on GitHub</a></span>
-    <div>
-        <!-- Hint Section -->
-        <div class="info">
-            <P class="hint">Hint :</P>
-            <P class="hint_text"> Enter a random Sentence into the text box and it will be checked for words having equal
-                <em> "length" </em>,
-                <em> "same letters" </em> , but
-                <em> "different arrangement" </em>
-            </p>
-        </div>
+  <!-- Heading -->
+  <div class="container">
+    <hr />
+    <h1> Detect isomorphic Words </h1>
+    <hr />
+    <style>
+      #forkongithub a {
+        background: #000;
+        color: #fff;
+        text-decoration: none;
+        font-family: arial, sans-serif;
+        text-align: center;
+        font-weight: bold;
+        padding: 5px 40px;
+        font-size: 1rem;
+        line-height: 2rem;
+        position: relative;
+        transition: 0.5s;
+      }
 
-        <!-- Fieldset -->
-        <div class="app_body">
-            <fieldset class="fieldset">
-                <fieldset>
-                    <legend>Please Enter Your Desired Sentence Here</legend>
-                    <input type="text" id="input" class="input" placeholder="Enter a Sentence Here"></textarea>
-                </fieldset>
-                <button id="submit"> Check Sentence</button>
-                <div id="output">
-                </div>
-            </fieldset>
-        </div>
-        <h5 class="follow">Follow me on Twitter</h5>
-        <a href="https://twitter.com/shegsteham?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @TwitterDev</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      #forkongithub a:hover {
+        background: #c11;
+        color: #fff;
+      }
+
+      #forkongithub a::before,
+      #forkongithub a::after {
+        content: "";
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 1px;
+        left: 0;
+        height: 1px;
+        background: #fff;
+      }
+
+      #forkongithub a::after {
+        bottom: 1px;
+        top: auto;
+      }
+
+      @media screen and (min-width:800px) {
+        #forkongithub {
+          position: fixed;
+          display: block;
+          top: 0;
+          right: 0;
+          width: 200px;
+          overflow: hidden;
+          height: 200px;
+          z-index: 9999;
+        }
+
+        #forkongithub a {
+          width: 200px;
+          position: absolute;
+          top: 60px;
+          right: -60px;
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -o-transform: rotate(45deg);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+        }
+      }
+
+    </style><span id="forkongithub"><a href="https://github.com/shegsteham/sorting-and-searching-algorithm">Fork me on
+        GitHub</a></span>
+    <div>
+      <!-- Hint Section -->
+      <div class="info">
+        <P class="hint">Hint :</P>
+        <P class="hint_text"> Enter a random Sentence into the text box and it will be checked for
+          <strong>isomorphic</strong> words i.e, equal
+          <em> "length" </em>,
+          <em> "same letters" </em> , but
+          <em> "different arrangement" </em>
+        </p>
+      </div>
+
+      <!-- Fieldset -->
+      <div class="app_body">
+        <fieldset class="fieldset">
+          <fieldset>
+            <legend>Please Enter Your Desired Sentence Here</legend>
+            <input type="text" id="input" class="input" placeholder="Enter a Sentence Here"></textarea>
+          </fieldset>
+          <button id="submit" class="submit"> Check Sentence</button>
+          <div id="output">
+          </div>
+        </fieldset>
+      </div>
+      <h5 class="follow">Built with &nbsp; ❤️ &nbsp; by Adépòjù Olúwáségun</h5>
+      <a href="https://twitter.com/shegsteham?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+        data-show-count="false">Follow @TwitterDev</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   </div>
 
   <!-- footer -->
-    <footer>
-      <h5>@shegsteham</h5>
-    </footer>
-  
-    <!-- Javascript -->
-    <script type="text/Javascript" src="Js/Script.js"></script>
+  <footer>
+    <h5>@shegsteham</h5>
+  </footer>
+
+  <!-- Javascript -->
+  <script type="text/Javascript" src="Js/Script.js"></script>
 </body>
 
 </html>
