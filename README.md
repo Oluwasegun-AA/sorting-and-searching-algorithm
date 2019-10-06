@@ -10,7 +10,7 @@
 * [License](#License)
 
 ### Test the App here
-View the App [HERE](https://shegsteham.github.io/sorting-and-searching-algorithm/)
+View the App [HERE](https://oluwasegun-aa.github.io/sorting-and-searching-algorithm/)
 
 ## Features
 
